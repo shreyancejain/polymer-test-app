@@ -23,7 +23,8 @@
     <!-- endbuild-->
 
     <style>
-        html, body {
+
+/*        html, body {
             height: 100%;
             margin: 0;
             background-color: #E5E5E5;
@@ -64,6 +65,28 @@
             .container {
                 width: 400px;
             }
+        }*/
+
+        *, *::after, *::before {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #CCC;
+        }
+
+        map-tour {
+            height: 100%;
+        }
+
+        gplus-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
         }
     </style>
 
@@ -71,29 +94,25 @@
 </head>
 
 <body unresolved>
+<!--<core-header-panel>-->
 
-<core-header-panel>
+    <!--<core-toolbar>-->
 
-    <core-toolbar>
+        <!--<paper-tabs id="tabs" selected="all" self-end>-->
+            <!--<paper-tab name="all">All</paper-tab>-->
+            <!--<paper-tab name="favorites">Favorites</paper-tab>-->
+        <!--</paper-tabs>-->
 
-        <paper-tabs id="tabs" selected="all" self-end>
-            <paper-tab name="all">All</paper-tab>
-            <paper-tab name="favorites">Favorites</paper-tab>
-        </paper-tabs>
+    <!--</core-toolbar>-->
 
-    </core-toolbar>
+    <!--<div class="container" layout vertical center>-->
+        <!--<post-list show="all"></post-list>-->
+    <!--</div>-->
 
-    <div class="container" layout vertical center>
-        <post-list show="all"></post-list>
-    </div>
+<!--</core-header-panel>-->
 
-</core-header-panel>
-
-<!--<div class="hero-unit">-->
-    <!--<yo-greeting></yo-greeting>-->
-    <!--<p>You now have</p>-->
-    <!--<yo-list></yo-list>-->
-<!--</div>-->
+<map-tour></map-tour>
+<!--<x-2048></x-2048>-->
 
 <!-- build:js scripts/app.js -->
 <script src="scripts/app.js"></script>
